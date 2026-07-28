@@ -1,12 +1,12 @@
 :root {
   color-scheme: dark;
   --bg-1: #ec24ce;
-  --bg-2: #312e81;
+  --bg-2: #dc2a6f;
   --accent: #f472b6;
   --accent-2: #38bdf8;
   --text: #f9fafb;
   --muted: #d1d5db;
-  --card: rgba(17, 24, 39, 0.82);
+  --card: rgba(182, 16, 207, 0.82);
   --border: rgba(255, 255, 255, 0.14);
 }
 

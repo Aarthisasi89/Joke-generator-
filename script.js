@@ -6,6 +6,9 @@ const statusText = document.getElementById('statusText');
 const chatCard = document.getElementById('chatCard');
 const chips = document.querySelectorAll('.chip');
 
+const API_URL = 'https://vibe-proxy-gqv4.onrender.com/v1/chat/completions';
+const API_KEY = 'sk-vibe-summer-2026';
+
 const jokes = [
   'Why did the scarecrow win an award? Because he was outstanding in his field!',
   'I told my computer I needed a break, and now it won’t stop sending me beach wallpapers.',
@@ -36,12 +39,12 @@ function getRandomJoke() {
 
 async function getLLMReply(message) {
   // Step 1: Build the request to the proxy server.
-  const endpoint = 'https://vibe-proxy-gqv4.onrender.com/v1/chat/completions';
+  const endpoint = API_URL;
 
   // Step 2: Set the exact headers required by the classroom proxy.
   const headers = {
     'Content-Type': 'application/json',
-    Authorization: 'Bearer sk-vibe-summer-2026'
+    Authorization: `Bearer ${API_KEY}`
   };
 
   // Step 3: Put the user's prompt into the request body in the expected JSON shape.
